@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <style>
+      h3{
+        color:purple;
+      }
+    </style>
 </head>
 
 <body data-simplebar>
@@ -19,16 +24,31 @@
   <!-- Main Area -->
   <main>
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid bg-primary text-white text-center">
+    <!-- <div class="jumbotron jumbotron-fluid bg-primary text-white text-center">
       <div class="container">
-        <h1 class="display-4">Movie App</h1>
+        <h1 class="display-1">Movie App</h1>
         <p class="lead">Find your favorite movie</p>
       </div>
-    </div>
+    </div> -->
     <!-- !Jumbotron -->
     
 
-    <section id="now-playing"></section>
+    <section id="now-playing" class="mt-5">
+      <div class="container">
+        <movie-item name="Spider-Man" poster="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg">
+          <div slot="title">Spider-Man</div>
+          <div slot="release_date">2020-01-01</div>
+        </movie-item>
+        <movie-item name="Spider-Man" poster="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg">
+          <div slot="title">Spider-Man</div>
+          <div slot="release_date">2020-01-01</div>
+        </movie-item>
+        <movie-item name="Spider-Man" poster="https://image.tmdb.org/t/p/w500/liW0mjvTyLs7UCumaHhx3PpU4VT.jpg">
+          <div slot="title">Spider-Man</div>
+          <div slot="release_date">2020-01-01</div>
+        </movie-item>
+      </div>
+    </section>
     
   </main>
   <!-- !Main Area -->
