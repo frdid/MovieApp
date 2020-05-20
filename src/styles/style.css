@@ -1,3 +1,9 @@
+body {
+  height: 100vh;
+}
 
+.bg-primary {
+  background-color: #0d253f !important;
+}
 
 /*# sourceMappingURL=style.css.map */
