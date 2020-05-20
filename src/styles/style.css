@@ -6,4 +6,20 @@ body {
   background-color: #0d253f !important;
 }
 
+/* DISCOVER MOVIES AREA */
+#discover-movies-area .movie {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#discover-movies-area .movie:hover {
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  transform: scale(1.5);
+}
+
+footer#footer-area .jumbotron {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

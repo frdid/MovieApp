@@ -1,0 +1,16 @@
+/* DISCOVER MOVIES AREA */
+
+#discover-movies-area {
+  .movie {
+    overflow: hidden;
+    transition: all .3s ease;
+
+  }
+
+  .movie:hover {
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+    transform: scale(1.5);
+  }
+}
