@@ -58,8 +58,8 @@ class AppBar extends HTMLElement {
     <a class="navbar-brand" href="/">MovieApp</a>
       <div class="navbar-nav">
       <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#now-playing-area">Now Playing</a>
       <a class="nav-item nav-link" href="#discover-movies-area">Discover</a>
+      <a class="nav-item nav-link" href="#search-form">Search</a>
       </div>
   </nav>
     `;

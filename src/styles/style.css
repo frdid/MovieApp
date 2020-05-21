@@ -6,16 +6,63 @@ body {
   background-color: #0d253f !important;
 }
 
+.btn-primary {
+  background-color: #01b4e4 !important;
+}
+
 /* DISCOVER MOVIES AREA */
-#discover-movies-area .movie {
+#discover-movies-area .movie, #search-area .movie {
   overflow: hidden;
   transition: all 0.3s ease;
+  position: relative;
 }
-#discover-movies-area .movie:hover {
-  overflow: hidden;
+#discover-movies-area .movie .info, #search-area .movie .info {
+  display: none;
+  transition: all 0.3s ease;
+}
+#discover-movies-area .movie:hover, #search-area .movie:hover {
   cursor: pointer;
   z-index: 2;
   transform: scale(1.5);
+}
+#discover-movies-area .movie:hover .info, #search-area .movie:hover .info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+}
+
+/* MOVIE DETAIL AREA */
+#detail-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#detail-wrapper #close-detail {
+  float: right;
+  margin: 20px;
+}
+#detail-wrapper .detail-area {
+  height: auto;
+  width: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  background-color: #0d253f;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  border-radius: 10px;
 }
 
 footer#footer-area .jumbotron {

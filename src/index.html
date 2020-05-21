@@ -14,46 +14,66 @@
 
     <header>
         <app-bar></app-bar>
+        <!-- <search-bar></search-bar> -->
     </header>
 
     <!-- Main Area -->
     <main>
 
-        <div class="home-wrapper">
+        <div id="home-wrapper">
+
             <!-- Jumbotron -->
             <div class="jumbotron jumbotron-fluid bg-primary text-white text-center">
                 <div class="container">
                     <h1 class="display-1">Movie App</h1>
                     <p class="lead">Find your favorite movie</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Here..." id="search-form">
+                      <button  class="input-group-append btn btn-sm btn-primary" id="searchMovie">Find Now</button>
+                    </div>
                 </div>
             </div>
             <!-- !Jumbotron -->
 
+            <!-- Search Movie -->
+            <section id="search-area">
+              <div class="container">
+                <h3 class="text-center pb-2 title-section d-none" id="search-title">Search</h3>
+                <div class="search-movies row"></div>
+            </div>
+            </section>
+            <!-- !Search Movie -->
+
             <!-- Discover Movie -->
             <section id="discover-movies-area">
                 <div class="container">
-                  <h3 class="text-center">Discover Movie</h3>
-                  <div class="discover-movies row"></div>
-                  <button type="button" class="btn btn-primary btn-lg btn-block my-3">Load More</button>
+                    <h3 class="text-center pb-2 title-section pt-3">Discover Movie</h3>
+                    <div class="discover-movies row"></div>
+                    <button type="button" class="load-more btn btn-primary btn-lg btn-block my-3">Load More</button>
                 </div>
             </section>
             <!-- !Discover Movie -->
 
         </div>
 
-        
+        <div id="detail-wrapper" class="d-none">
+            <div class="detail-area text-white">
+                <button class="btn btn-sm btn-danger" id="close-detail">&times;</button>
+                <div class="detail-movie"></div>
+            </div>
+        </div>
 
     </main>
     <!-- !Main Area -->
 
     <!-- Footer Area -->
     <footer id="footer-area">
-      <div class="jumbotron jumbotron-fluid bg-primary text-white text-center">
-        <div class="container">
-          <img src="./assets/images/blue_long_2.svg" alt="Image" width="200" height="100">
-        <p class="copyright pb-4">&copy; 2020 | <a href="#">This product uses the TMDb API but is not endorsed or certified by TMDb.</a></p>
+        <div class="jumbotron jumbotron-fluid bg-primary text-white text-center">
+            <div class="container">
+                <img src="./assets/images/blue_long_2.svg" alt="Image" width="200" height="100">
+                <p class="copyright pb-4">&copy; 2020 | <a href="#">This product uses the TMDb API but is not endorsed or certified by TMDb.</a></p>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- !Footer Area -->
 
