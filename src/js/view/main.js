@@ -1,4 +1,3 @@
-import '../component/movie-item.js';
 const main = () => {
   // Initial Values
   const image_url = "https://image.tmdb.org/t/p/w500";
@@ -8,6 +7,8 @@ const main = () => {
   const detailMovie = document.querySelector('.detail-movie');
   const searchBtn = document.querySelector('#searchMovie');
   const searchArea = document.querySelector('.search-movies');
+
+  const dataSource = DataSource();
 
 
   const loadMore = document.querySelector('button.load-more')
